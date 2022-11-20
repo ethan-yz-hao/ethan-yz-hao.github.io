@@ -115,6 +115,10 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  link:
+    - label: "Latest Resume"
+      icon: "fas fa-file-pdf"
+      url: "CV.pdf"
 
 
 # Reading Files
