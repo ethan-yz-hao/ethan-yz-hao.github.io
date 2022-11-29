@@ -115,10 +115,6 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  link:
-    - label: "Latest Resume"
-      icon: "fas fa-file-pdf"
-      url: "CV.pdf"
 
 
 # Reading Files
@@ -179,9 +175,9 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
+  #teaching:
+  #  output: true
+  #  permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
@@ -189,6 +185,12 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
+    output: true
+    permalink: /:collection/:path/
+  works:
+    output: true
+    permalink: /:collection/:path/
+  research:
     output: true
     permalink: /:collection/:path/
 
@@ -214,14 +216,14 @@ defaults:
       layout: single
       author_profile: true
   # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+  #- scope:
+  #    path: ""
+  #    type: teaching
+  #  values:
+  #    layout: single
+  #    author_profile: true
+  #    share: true
+  #    comments: true
   # _publications
   - scope:
       path: ""
@@ -241,11 +243,19 @@ defaults:
       share: true
       comment: true
   # _talks
+  #- scope:
+  #    path: ""
+  #    type: talks
+  #  values:
+  #    layout: talk
+  #    author_profile: true
+  #    share: true
+  # _works
   - scope:
       path: ""
-      type: talks
+      type: works
     values:
-      layout: talk
+      layout: work
       author_profile: true
       share: true
 
