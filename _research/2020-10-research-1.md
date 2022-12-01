@@ -12,6 +12,9 @@ location: "Beijing, China"
  This research aimed to develop the Global Intelligence Innovation Index (GIII), a composite index for measuring the intelligence innovation levels of different countries. I designed a machine-learning-based method using K-means and Random Forest algorithm for index construction. Based on the national intelligence innovation framework, the index system of GIII is proposed then used to analyzed the intelligence innovation of 101 countries, providing a global landscape for policy-makers.
 
 ---
+ You can download the manuscript of the article [here]({{ site.url }}{{ site.baseurl }}/files/Evaluating_Global_Intelligence_Innovation-manuscript.pdf).
+
+---
 ## Machine-Learning-Based Method for Constructing GIII  
  GIII employed a machine-learning-based method for index construction, specifically for weight calculation. The method, an unsupervised clustering-based random forest model, uses K-means model to obtain cluster label as the target variable for training the subsequent Random Forest Model. The Random Forest Model is used obtain the Mean Decrease of Impurity as index weight, which is then linear aggregated with the standardized dataset to calculate GIII. 
 
