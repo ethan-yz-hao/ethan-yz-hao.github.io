@@ -9,6 +9,6 @@ end:
 location: "Beijing, China"
 ---
 
- This research investigates the To acquire a primary understanding of how technology facilitates economic issues, under the guidance of my advisor, Prof. Xiaoyu, and other scholars, I joined the research team of Global Intelligence Innovation Index and Voucher or Cash–Empirical Study Based on International Samples. I successfully developed a Machine-Learning method to analyze socioeconomic issues. It utilized K-means and Random Forest models to yield the Mean Decrease of Impurity and analyze feature importance in regression analysis. In addition, I participated in data collection, imputation, and visualization, as well as writing the article, which is now seeking publication. Through this experience, I mastered essential coding skills, extended my experience in Machine Learning, and was motivated to pursue further.
+ This research investigates the factors affecting economic policy makers when deciding upon policy options to boost consumption after facing the negative impact of the coronavirus pandemic, in particular the policy options of cash or voucher incentives. The logit model and the random forest model is used to examine the possible factors, including macroeconomic, fiscal, social, epidemic and institutional variables, based on the data of 190 countries around the world.
 
 ---
