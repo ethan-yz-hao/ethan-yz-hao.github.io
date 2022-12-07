@@ -9,13 +9,9 @@ end:
 location: "Beijing, China"
 ---
 
- The research intends to explore supply chain mechanisms that effect its resilience. We employ an agent-based model of a generic push-type manufacturing supply chain. 
+ The research intends to explore supply chain mechanisms that effect its resilience. We employ an agent-based model of a generic push-type manufacturing supply chain consisting of heterogenous agents characterized by capital endowment. We do this: 
  
-push-type supply chains with heterogenous agents characterized by capital endowment.
- 
- We employ
-an Agent Based Model of a generic food chain network consisting of stylized individuals representing
-producers, traders, and consumers. We do this: 1/ to describe the dynamically
+ 1/ to describe the dynamically
 changing disaggregated flows of crop items between these agents, and 2/ to be able to
 explicitly consider agent behaviour. The agents have implicit personal objectives for trading.
 We quantify resilience and efficiency by linking these to the fraction of fulfilment of the overall
@@ -34,10 +30,10 @@ the reorganization of real-life food chains to increase their resilience to meet
 and nutrition security goals.
 ---
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/ScrAbm_network.png){: width="210"} ![alt]({{ site.url }}{{ site.baseurl }}/images/GIII_income_2.png){: width="200"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/ScrAbm_network.png){: width="400"} | 
 |:--:| 
 | *The Model's Network Structure* |
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/ScrAbm_time.png){: width="210"} ![alt]({{ site.url }}{{ site.baseurl }}/images/GIII_income_2.png){: width="200"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/ScrAbm_time.png){: width="400"} | 
 |:--:| 
 | *The Model's Execution Sequence* |
