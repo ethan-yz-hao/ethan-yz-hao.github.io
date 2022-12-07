@@ -9,7 +9,7 @@ end:
 location: "Beijing, China"
 ---
 
- The research intends to explore supply chain mechanisms that effect its resilience. We employ an agent-based model of a generic push-type manufacturing supply chain consisting of heterogenous agents characterized by capital endowment. The model defines: 1. linear-structured material flows between different tiers of firms; 2. firms' behaviors and objectives based on Cobb-Douglas production function with constant returns to scale; 3. competitive markets between adjacent tiers of firms where upstream and downstream firms actively bid prices.
+ This research intends to explore supply chain mechanisms that effect its resilience. We employ an agent-based model of a generic push-type manufacturing supply chain consisting of heterogenous agents characterized by capital endowment. The model defines: 1. linear-structured material flows between different tiers of firms; 2. firms' behaviors and objectives based on Cobb-Douglas production function with constant returns to scale; 3. competitive markets between adjacent tiers of firms where upstream and downstream firms actively bid prices.
 
 ---
 
