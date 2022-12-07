@@ -9,4 +9,6 @@ end:
 location: "Beijing, China"
 ---
 
-This is a description of your talk, which is a markdown files that can be all markdown-ified like any other post. Yay markdown!
+ This research examines the relationship between firm resilience and industrial-internet based on a resource-based view. We identified three mediating factors in the above relationship, including visibility, collaboration and agility. In addition, we utilize internal self-control as a moderating factor. Through the Alliance of Industrial Internet, we collected 622 valid survey responses from Chinese manufacturing companies. The result suggests that higher level of industrial-internet capabilities leads to higher visibility, collaboration and agility, thus enhancing firm resilience. Internal self-control moderates the above relationships.
+
+---

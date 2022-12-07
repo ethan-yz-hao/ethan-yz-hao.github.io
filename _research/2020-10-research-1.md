@@ -9,7 +9,7 @@ end:
 location: "Beijing, China"
 ---
 
- This research aimed to develop the Global Intelligence Innovation Index (GIII), a composite index for measuring the intelligence innovation levels of different countries. I designed a machine-learning-based method using K-means and Random Forest algorithm for index construction. Based on the national intelligence innovation framework, the index system of GIII is proposed then used to analyzed the intelligence innovation of 101 countries, providing a global landscape for policy-makers.
+ This research aims to develop the Global Intelligence Innovation Index (GIII), a composite index for measuring the intelligence innovation levels of different countries. I designed a machine-learning-based method using K-means and Random Forest algorithm for index construction. Based on the national intelligence innovation framework, the index system of GIII is proposed then used to analyzed the intelligence innovation of 101 countries, providing a global landscape for policy-makers. The manuscript has been submitted to *Technological Forecasting and Social Change* and is currently under review.
 
 ---
  You can download the manuscript of the article [here]({{ site.url }}{{ site.baseurl }}/files/Evaluating_Global_Intelligence_Innovation-manuscript.pdf).
@@ -26,7 +26,7 @@ location: "Beijing, China"
 ## Insights from GIII  
  
  **About Income**  
- In general, countries' intelligence innovation increase with their level of economic development. However, the variance of countries' GIII scores increases with GDP per capita, suggesting that other factors beyond income affect a country' intelligence innovation more significantly when country enters higher income level.
+ In general, countries' intelligence innovation increases with their level of economic development. However, the variance of countries' GIII scores increases with GDP per capita, suggesting that other factors beyond income affect a country' intelligence innovation more significantly when country enters higher income level.
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/GIII_income_1.png){: width="210"} ![alt]({{ site.url }}{{ site.baseurl }}/images/GIII_income_2.png){: width="200"} | 
 |:--:| 
