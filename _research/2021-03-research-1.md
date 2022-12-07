@@ -13,6 +13,6 @@ location: "Beijing, China"
 
 ---
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/ScrSem_model.png){: width="400"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/ScrSem_model.png){: width="500"} | 
 |:--:| 
 | *Hypothesized Relationships* |

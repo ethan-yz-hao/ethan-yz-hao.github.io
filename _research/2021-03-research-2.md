@@ -9,31 +9,14 @@ end:
 location: "Beijing, China"
 ---
 
- The research intends to explore supply chain mechanisms that effect its resilience. We employ an agent-based model of a generic push-type manufacturing supply chain consisting of heterogenous agents characterized by capital endowment. We do this: 
- 
- 1/ to describe the dynamically
-changing disaggregated flows of crop items between these agents, and 2/ to be able to
-explicitly consider agent behaviour. The agents have implicit personal objectives for trading.
-We quantify resilience and efficiency by linking these to the fraction of fulfilment of the overall
-explicit objective to have all consumers meet their food requirement. We consider different
-types of network structures in combination with different agent interaction types under
-different types of stylized shocks. We find that generally the network structures with higher
-efficiency are also more sensitive to shocks, while less efficient network types display more
-resilience. At first glance these results seem to confirm the existence of a system-level
-trade-off between resilience and efficiency similar to what is reported in business management
-and ecology literature. However, the results are modified by the trading interactions
-and the type of shock. In our simulations resilience and efficiency are affected by ‘soft’
-boundaries caused by the preference and trust of agents (i.e., social aspects) in trading.
-The ability of agents to switch between trading partners represents an important aspect of
-resilience, namely a capacity to reorganize. These insights may be relevant when considering
-the reorganization of real-life food chains to increase their resilience to meet future food
-and nutrition security goals.
+ The research intends to explore supply chain mechanisms that effect its resilience. We employ an agent-based model of a generic push-type manufacturing supply chain consisting of heterogenous agents characterized by capital endowment. The model defines: 1. linear-structured material flows between different tiers of firms; 2. firms' behaviors and objectives based on Cobb-Douglas production function with constant returns to scale; 3. competitive markets between adjacent tiers of firms where upstream and downstream firms actively bid prices.
+
 ---
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/ScrAbm_network.png){: width="400"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/ScrAbm_network.png){: width="500"} | 
 |:--:| 
 | *The Model's Network Structure* |
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/ScrAbm_time.png){: width="400"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/ScrAbm_time.png){: width="600"} | 
 |:--:| 
 | *The Model's Execution Sequence* |
