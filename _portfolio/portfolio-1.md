@@ -1,6 +1,6 @@
 ---
 title: "Bilibili Content Creator Data Crawling and Analysis"
-excerpt: "A course project aiming to provide an overview about content creators on Bilibili and their social network.<br/><img src='/images/portfolio-1-wordcloud1.png' width='800'>"
+excerpt: "A course project aiming to provide an overview about content creators on Bilibili and their social network.<br/><img src='/images/portfolio-1-wordcloud1.png' width='600'>"
 collection: portfolio
 ---
 
@@ -57,6 +57,7 @@ The number of video uploaded from each content creator has a mean value of 337, 
 | *Histogram of Content Creator Number Based on the Number of Videos Uploaded* |
 
 ### Relationship between the Number of Followers and the Number of Videos Uploaded
+No significant positive relationship is found between the number of followers and the number of videos uploaded in general. However, when looking into such relationship within each video category, significant relationship can be found, i.e., positive in animation, cinema, dance; negative in fashion, game, life.
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-1-follower&video.png){: width="400"} | 
 |:--:| 
@@ -67,3 +68,8 @@ The number of video uploaded from each content creator has a mean value of 337, 
 | *Heatmap of the Number of Followers and the Number of Videos Uploaded Based on Video Categories* |
 
 ### Social Network of Content Creator
+The social network of content creators is visualized using networkx. Nodes with a degree greater than 8 is drawn, and 9 node with highest degree is identified.
+
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-1-network.png){: width="600"} | 
+|:--:| 
+| *Social Network of Content Creators* |
