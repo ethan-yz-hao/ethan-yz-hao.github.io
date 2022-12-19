@@ -1,6 +1,6 @@
 ---
 title: "Bilibili Content Creator Data Crawling and Analysis"
-excerpt: "A course project aiming to provide an overview about content creators on Bilibili and their social network.<br/><img src='/images/portfolio-1-wordcloud1.png'>"
+excerpt: "A course project aiming to provide an overview about content creators on Bilibili and their social network.<br/><img src='/images/portfolio-1-wordcloud1.png' width='800'>"
 collection: portfolio
 ---
 
@@ -57,12 +57,6 @@ The number of video uploaded from each content creator has a mean value of 337, 
 | *Histogram of Content Creator Number Based on the Number of Videos Uploaded* |
 
 ### Relationship between the Number of Followers and the Number of Videos Uploaded
-
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-1-follower.png){: width="600"} | 
-|:--:| 
-| *Histogram of Content Creator Number Based on the Number of Followers* |
-
-The number of video uploaded from each content creator has a mean value of 337, median value of 108, and maximum value of 110293. Most content creator uploads less than 500 videos. Extreme value might come from bot user.
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-1-follower&video.png){: width="400"} | 
 |:--:| 
