@@ -43,5 +43,33 @@ A total of 155120 records of basic user data (user id, user name), and 558345 re
 A total of 3730 detailed user data (number of followers, number of videos uploaded, video category with the highest and second-highest number of videos uploaded)
 
 ## Data Analysis
-the number of followers
-networkx for social network analysis
+### Content Creator Distribution
+Most content creator has less than 500,000 followers, and the number of content creators drops sharply after they has more than 500,000 followers. Content creator with more than 2 million is almost zero, but the maximum number of followers can reach 12 million. All of which reflects extreme stratification of content creators on Bilibili.
+
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-1-follower.png){: width="600"} | 
+|:--:| 
+| *Histogram of Content Creator Number Based on the Number of Followers* |
+
+The number of video uploaded from each content creator has a mean value of 337, median value of 108, and maximum value of 110293. Most content creator uploads less than 500 videos. Extreme value might come from bot user.
+
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-1-video.png){: width="600"} | 
+|:--:| 
+| *Histogram of Content Creator Number Based on the Number of Videos Uploaded* |
+
+### Relationship between the Number of Followers and the Number of Videos Uploaded
+
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-1-follower.png){: width="600"} | 
+|:--:| 
+| *Histogram of Content Creator Number Based on the Number of Followers* |
+
+The number of video uploaded from each content creator has a mean value of 337, median value of 108, and maximum value of 110293. Most content creator uploads less than 500 videos. Extreme value might come from bot user.
+
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-1-follower&video.png){: width="400"} | 
+|:--:| 
+| *the Number of Followers and the Number of Videos Uploaded* |
+
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-1-follower&video&category.png){: width="600"} | 
+|:--:| 
+| *Heatmap of the Number of Followers and the Number of Videos Uploaded Based on Video Categories* |
+
+### Social Network of Content Creator
