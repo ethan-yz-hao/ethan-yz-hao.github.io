@@ -1,6 +1,6 @@
 ---
 title: "Bilibili Content Creator Data Crawling and Analysis"
-excerpt: "A course project aiming to provide an overview about content creators on Bilibili and their social network<br/><img src='/images/500x300.png'>"
+excerpt: "A course project aiming to provide an overview about content creators on Bilibili and their social network.<br/><img src='/images/portfolio-1-wordcloud1.png'>"
 collection: portfolio
 ---
 
