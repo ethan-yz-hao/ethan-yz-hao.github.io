@@ -10,7 +10,7 @@ collection: portfolio
     This dataset contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
 
 ## Overview
-Python Package Used: pandas, numpy, matplotlib, seaborn
+Python Package Used: datetime, pandas, numpy, matplotlib, seaborn
 
 ### Customer Nationality
 
@@ -29,6 +29,7 @@ Python Package Used: pandas, numpy, matplotlib, seaborn
 | *Average Sales of Each Day in a Week* |
 
 ## RFM Analysis
+Python Package Used: datetime, pandas, numpy, matplotlib, seaborn
 
 Using recency, frequency, and monetary value, all customer is segmented into 8 categories with each indicator splits into "high" or "low" based on the median of each indicator.
 
@@ -58,8 +59,9 @@ The result of RFM analysis is compared using Kmeans clustering algorithm. Prior 
 | *Kmeans Result* Note: Frequency and monetary axis is on log10 scale. |
 
 ## Churn Prediction
+Python Package Used: datetime, pandas, numpy, matplotlib, seaborn, statistics, sklearn
 
-To determine whether a customer is churned, a criterion of 90-days purchase interval from the last purchase is chosed based on the density graph below.
+To determine whether a customer is churned, a criterion of 90-days purchase interval from the last purchase is chosen based on the density graph below.
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-interval.png){: width="600"} | 
 |:--:| 
@@ -99,6 +101,9 @@ The feature importance of the logistic regression model is further analyze using
 | *Feature Importance* |
 
 ## Customer Lifetime Value Analysis
+Python Package Used: datetime, pandas, numpy, matplotlib, seaborn, lifetimes
+
+Using the Beta Geometric Negative Binomial Distribution (BG-NBD) model, the the expected number of future purchases and possibility of whether a customer is alive is estimated based on frequency and recency.
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-frequency_recency_matrix.png){: width="400"} | 
 |:--:| 
@@ -107,3 +112,23 @@ The feature importance of the logistic regression model is further analyze using
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-probability_alive_matrix.png){: width="400"} | 
 |:--:| 
 | *Probability Alive Matrix* |
+
+Based on the above analysis, 5 customer with highest expected purchases in the next period is selected.
+
+| Customer ID | Frequency | T | Recency | Monetary | predicted_purchases |
+|:--------|:-------:|:-------:|:-------:|:-------:|--------:|
+| 14911 | 132 | 373 | 372 | 1089.583788| 0.316007 |
+| 12748 | 114 | 373 | 372 | 295.787105| 0.273483 |
+| 17841 | 112 | 373 | 371 | 365.996161 | 0.268593 |
+| 15311 | 90 | 373 | 373 | 675.198889| 0.216880 |
+| 14606 | 89 | 373 | 372 | 136.591573| 0.214418 |
+
+Using the Gamma Gamma model, the average expected value of each customer can be estimated. 5 customer with highest expected value is selected.
+
+| Customer ID | Frequency | T | Recency | Monetary | predicted_purchases | conditional_expected_average_profit |
+|:--------|:-------:|:-------:|:-------:|:-------:|:-------:|--------:|
+| 16446 | 2 | 205 | 204 | 84236.250000 | 0.013693 | 84660.425564 |
+| 12346 | 1 | 325 | 0 | 77183.600000 | 0.000047 | 77965.789328 |
+| 15098 | 1 | 182 | 0 | 39916.500000 | 0.000306 | 40326.709551 |
+| 15749 | 2 | 332 | 97 | 22267.150000 | 0.001654 | 22383.590581 |
+| 16000 | 1 | 2 | 0 | 12393.700000 | 0.037296 | 12529.192039 |
