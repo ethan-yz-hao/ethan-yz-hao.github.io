@@ -44,7 +44,7 @@ Using recency, frequency, and monetary value, all customer is segmented into 8 c
 | New Customer | High | Low | Low |
 | Hibernating | Low | Low | Low |
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-RFM-customer.png){: width="300"} ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-RFM-money.png){: width="300"} |
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-RFM-customer.png){: width="350"} ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-RFM-money.png){: width="350"} |
 |:--:| 
 | *Proportion of Different Types of Customer and Amount of money spent grouped by Customer Type* |
 
@@ -63,7 +63,7 @@ Python Package Used: datetime, pandas, numpy, matplotlib, seaborn, statistics, s
 
 To determine whether a customer is churned, a criterion of 90-days purchase interval from the last purchase is chosen based on the density graph below.
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-interval.png){: width="600"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-interval.png){: width="400"} | 
 |:--:| 
 | *Customer Purchase Interval* |
 
@@ -90,7 +90,7 @@ A number of different predictive algorithms is tested using k-fold cross validat
 | Gaussian Naive Bayes | 0.663287 | 0.003052 | 0.666667 | 0.65884 |
 | Decision Tree | 0.635171 | 0.008165 | 0.650069 | 0.627939 |
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-ROC.png){: width="600"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-ROC.png){: width="400"} | 
 |:--:| 
 | *ROC of Logistic Regression* |
 
