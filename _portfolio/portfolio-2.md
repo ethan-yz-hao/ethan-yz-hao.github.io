@@ -1,6 +1,6 @@
 ---
-title: "Bilibili Content Creator Data Crawling and Analysis"
-excerpt: "A course project (Introduction to Programming Using Python, Spring 2020) aiming to provide an overview about content creators on Bilibili and their social network.<br/><img src='/images/portfolio-1-wordcloud1.png' width='600'>"
+title: "E-Commerce Platform Data Analysis"
+excerpt: "A course project (Python Analytics and Cases, Fall 2021) aiming to provide an overview about content creators on Bilibili and their social network.<br/><img src='/images/portfolio-1-wordcloud1.png' width='600'>"
 collection: portfolio
 ---
 
