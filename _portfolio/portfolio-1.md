@@ -43,6 +43,8 @@ A total of 155120 records of basic user data (user id, user name), and 558345 re
 A total of 3730 detailed user data (number of followers, number of videos uploaded, video category with the highest and second-highest number of videos uploaded)
 
 ## Data Analysis
+Python Package Used: pandas, matplotlib
+
 ### Content Creator Distribution
 Most content creator has less than 500,000 followers, and the number of content creators drops sharply after they has more than 500,000 followers. Content creator with more than 2 million is almost zero, but the maximum number of followers can reach 12 million. All of which reflects extreme stratification of content creators on Bilibili.
 
