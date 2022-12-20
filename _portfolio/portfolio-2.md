@@ -30,27 +30,69 @@ Python Package Used: pandas, numpy, matplotlib, seaborn
 
 ## RFM Analysis
 
+Using recency, frequency, and monetary value, all customer is segmented into 8 categories with each indicator splits into "high" or "low" based on the median of each indicator.
+
+| Customer Type | Recency | Frequency | Monetary |
+|:--------|:-------:|:-------:|--------:|
+| High-Value Loyalist | High | High | High |
+| High-Value Loyalist At Risk | Low | High | High |
+| Active Potential Loyalist | High | Low | High |
+| Hibernating Potential Loyalist | Low | Low | High |
+| Low-Value Loyalist | High | High | Low |
+| Low-Value Loyalist At Risk | Low | High | Low |
+| New Customer | High | Low | Low |
+| Hibernating | Low | Low | Low |
+
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-RFM-customer.png){: width="300"} ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-RFM-money.png){: width="300"} |
 |:--:| 
 | *Proportion of Different Types of Customer and Amount of money spent grouped by Customer Type* |
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-RFM3D.png){: width="600"} | 
 |:--:| 
-| *RFM Analysis Result* |
+| *RFM Analysis Result* Note: Frequency and monetary axis is on log10 scale. |
+
+The result of RFM analysis is compared using Kmeans clustering algorithm. Prior to training Kmeans, RFM value is standardized using the standard scaler. The number of clusters is set to 8 to better compare RFM results.
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-Kmeans3D.png){: width="600"} | 
 |:--:| 
-| *Kmeans Result* |
+| *Kmeans Result* Note: Frequency and monetary axis is on log10 scale. |
 
 ## Churn Prediction
+
+To determine whether a customer is churned, a criterion of 90-days purchase interval from the last purchase is chosed based on the density graph below.
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-interval.png){: width="600"} | 
 |:--:| 
 | *Customer Purchase Interval* |
 
+A number of feature variables is derived based on the original dataset. The nationality of customer is transformed into dummy variable.
+
+| Variable Code | Meaning |
+|:--------|--------:|
+| AveMonetery | The average amount of money spent based on frequency |
+| NumBuy | The number of different types of things brought |
+| AveQuantBuy | The average quantity of things brought in each invoice |
+| AvePriceBuy | The average price of things brought in each invoice |
+| AveTotalBuy | The average amount of money spent in each purchase |
+
+A number of different predictive algorithms is tested using k-fold cross validation.
+
+| Model	| Average Accuracy | Standard Deviation	| Maximum Accuracy | Minimum Accuracy |
+|:--------|:-------:|:-------:|:-------:|--------:|
+| Logistic Regression | 0.719752 | 0.011095 | 0.735823 | 0.699862 |
+| Gradient Boosting | 0.713528 | 0.009773 | 0.73029 | 0.697095 |
+| Ada Boost | 0.712604 | 0.011968 | 0.728907 | 0.692946 |
+| Random Forest | 0.702928 | 0.007709 | 0.71231 | 0.688797 |
+| K-Neighbors | 0.683798 | 0.00671 | 0.69018 | 0.669433 |
+| SVC | 0.666745 | 0.002955 | 0.669433 | 0.661602 |
+| Gaussian Naive Bayes | 0.663287 | 0.003052 | 0.666667 | 0.65884 |
+| Decision Tree | 0.635171 | 0.008165 | 0.650069 | 0.627939 |
+
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-ROC.png){: width="600"} | 
 |:--:| 
-| *ROC* |
+| *ROC of Logistic Regression* |
+
+The feature importance of the logistic regression model is further analyze using the permutation method.
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-importance.png){: width="600"} | 
 |:--:| 
@@ -58,10 +100,10 @@ Python Package Used: pandas, numpy, matplotlib, seaborn
 
 ## Customer Lifetime Value Analysis
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-frequency_recency_matrix.png){: width="600"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-frequency_recency_matrix.png){: width="400"} | 
 |:--:| 
 | *Frequency Recency Matrix* |
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-probability_alive_matrix.png){: width="600"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-2-probability_alive_matrix.png){: width="400"} | 
 |:--:| 
 | *Probability Alive Matrix* |
