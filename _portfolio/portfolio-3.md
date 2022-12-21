@@ -10,14 +10,14 @@ Python Package Used: datetime, pandas, numpy, matplotlib, seaborn
 ### Starting Status
 将整个城市简化为一个N×N大小的网格，每个网格代表一户居民，其中10%的方格上没有居民（空格子）。假设该城市中仅有两类数量相同的居民，以两种颜色（红色和蓝色）表示。这两类居民可以代表两种族裔，也可以代表两种收入水平。在模型开始运行前，我们在网格中随机生成上述两类居民以及空格子，这个网格就是模型的初始状态。
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-grid.jpg){: width="400"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-grid.jpg){: width="200"} | 
 |:--:|
 | *grid* |
 
 ### Agent Behavior
 对于网格中的每个居民，其只有一条行为规则：当某一居民周围的8个居民中与其相同的比例低于某一阈值，该居民就会“搬家”，随机前往网格中任意空格子。这里的阈值可以理解为一种“排外程度”，阈值越高，网格中的居民越无法“容忍”与其不同的居民，越倾向“搬家”。对于网格边界上的居民，我们假设他们可以“看到边界另一边的居民”。对于下图中右下角的居民，其可以看到所有黑色框线内的居民。
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-grid_frame.jpg){: width="400"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-grid_frame.jpg){: width="200"} | 
 |:--:|
 | *behavior* |
 
@@ -33,28 +33,28 @@ Python Package Used: datetime, pandas, numpy, matplotlib, seaborn
 ### 50%
 至此，谢林的隔离模型便可以开始运行了[5]。我们首先以“排外程度”为50%的中间情况开始实验。允许周围50%的居民与自身不同听起来已经是一个很包容的社会了，毕竟其与网格中两类居民的比例相同，但可以看到，两种居民在一定时间的“搬家”过程后，模型逐渐收敛，最终形成了明显的分界线与隔离现象。
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-50%.gif){: width="400"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-50.gif){: width="300"} | 
 |:--:|
 | *50%* |
 
 ### 30%
 那如果社会更加开明会使结果产生差异吗？我们将“排外程度”降低为30%后再次进行实验，发现下图中的模型仍然存在隔离的现象。通过计算每一个居民周围8个居民中和自身相同的比例并求平均，可以得到整个模型的“平均相似度”(mean similarity)。“排外程度”30%的模型收敛后的“平均相似度”接近70%，这说明平均情况下，每个居民周围70%的居民与其相同，隔离的现象仍然明显。
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-30%.gif){: width="400"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-30.gif){: width="300"} | 
 |:--:|
 | *30%* |
 
 ### 20%
 直至排外程度下降至20%，才没有出现明显的隔离现象，此时的“平均相似度”接近50%，与网格中两类居民的比例相同。
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-20%.gif){: width="400"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-20.gif){: width="300"} | 
 |:--:|
 | *20%* |
 
 ### 80%
 有趣的是，如果继续提高“排外程度”至80%，“平均相似度”却进一步下降至50%。当所有人都是极端排外主义者时，怎么会形成一个族群融合程度相当高的社会呢？仔细观察后可以发现，虽然“平均相似度”一直保持较低的水平，但“开心”居民的比例很低，所有居民都在频繁的“搬家”，导致聚居区无法形成。
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-80%.gif){: width="400"} | 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-80.gif){: width="300"} | 
 |:--:|
 | *80%* |
 
