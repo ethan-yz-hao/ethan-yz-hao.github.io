@@ -11,6 +11,6 @@ Python Package Used: datetime, pandas, numpy, matplotlib, seaborn
 
 ### Customer Nationality
 
-| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-20%.png){: width="400"} | 
-|:--:| 
+| ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-20%.gif){: width="400"} | 
+|:--:|
 | *20%* |
