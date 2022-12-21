@@ -4,61 +4,62 @@ excerpt: "The classic Schelling's segregation model (Spring 2022) aiming to intr
 collection: portfolio
 ---
 
-## Modeling
-Python Package Used: datetime, pandas, numpy, matplotlib, seaborn
+Schelling's segregation model is an agent-based model developed by economist Thomas Schelling in 1971. It does not include outside factors that place pressure on agents to segregate and demonstrate that having people with "mild" in-group preference towards their own group could still lead to a highly segregated society via de facto segregation.
 
-### Starting Status
-将整个城市简化为一个N×N大小的网格，每个网格代表一户居民，其中10%的方格上没有居民（空格子）。假设该城市中仅有两类数量相同的居民，以两种颜色（红色和蓝色）表示。这两类居民可以代表两种族裔，也可以代表两种收入水平。在模型开始运行前，我们在网格中随机生成上述两类居民以及空格子，这个网格就是模型的初始状态。
+## Modeling
+Python Package Used: mesa
+
+### Initial Status
+Simplify a city into a N × N gird, with each white block represents one household with no inhabitant (accounts for 10% of the grid). Assume that the city has 2 types of households with the same number, represented by two colors (red and blue). Randomly generate the above two types of households in the grid as the initial state of the model.
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-grid.jpg){: width="200"} | 
 |:--:|
 | *grid* |
 
 ### Agent Behavior
-对于网格中的每个居民，其只有一条行为规则：当某一居民周围的8个居民中与其相同的比例低于某一阈值，该居民就会“搬家”，随机前往网格中任意空格子。这里的阈值可以理解为一种“排外程度”，阈值越高，网格中的居民越无法“容忍”与其不同的居民，越倾向“搬家”。对于网格边界上的居民，我们假设他们可以“看到边界另一边的居民”。对于下图中右下角的居民，其可以看到所有黑色框线内的居民。
+For every household in the grid, there is only one rule: when the proportion of the same type of household in the surrounding 8 households falls below a certain threshold, the household will "move" and randomly go to any empty block in the grid. The higher the threshold, the less tolerant the households are to households who are different from them, and the more likely they are to "move". For households on the boundary of the grid, we assume that they can "see the households on the other side of the boundary". For the households in the lower right corner of the figure below, they can see all the households in the black boxed line.
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-grid_frame.jpg){: width="200"} | 
 |:--:|
 | *behavior* |
 
 ### Execution Sequence
-接下来，我们需要决定各个居民的行动顺序，最简单的办法便是对于全部的居民进行随机排序，居民按照该序列进行行动。在每次行动前，居民都会依据其行为规则判定其当前位置是否需要移动。在完成一次序列后重新排序，开始新一轮的行动。
+Next, the sequence of the households' actions is determined by randomly order all the households, and the households check the threshold then move in that order. After completing a round, a new order is generated.
 
 ### Terminating Criterion
-
-最后，模型还需要一个中止条件。我们通过记录模型中满足“排外程度”要求的居民数量，也就是处于“开心”状态的居民数量，可以计算出网格中“开心”居民的比例(Happy Ratio)，当“开心”居民的比例达到100%，即所有的居民都“开心”时，模型中止。
+Finally, the model requires an terminating criterion. By recording the number of households in the model that does not exceed the threshold, i.e., the number of households in the "happy" state, we can calculate the proportion of "happy" households in the grid (Happy Ratio). When the proportion of "happy" households reaches 100%, i.e., all households are "happy", the model is terminated.
 
 ## Result
 
 ### 50%
-至此，谢林的隔离模型便可以开始运行了[5]。我们首先以“排外程度”为50%的中间情况开始实验。允许周围50%的居民与自身不同听起来已经是一个很包容的社会了，毕竟其与网格中两类居民的比例相同，但可以看到，两种居民在一定时间的“搬家”过程后，模型逐渐收敛，最终形成了明显的分界线与隔离现象。
+We started our analysis with a threshold of 50%, which seems to be a very tolerant society, after all, it has the same proportion of the two types of households in the grid, but it can be seen that the model gradually converges after a certain period of time, eventually forming a clear dividing line.
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-50.gif){: width="300"} | 
 |:--:|
 | *50%* |
 
 ### 30%
-那如果社会更加开明会使结果产生差异吗？我们将“排外程度”降低为30%后再次进行实验，发现下图中的模型仍然存在隔离的现象。通过计算每一个居民周围8个居民中和自身相同的比例并求平均，可以得到整个模型的“平均相似度”(mean similarity)。“排外程度”30%的模型收敛后的“平均相似度”接近70%，这说明平均情况下，每个居民周围70%的居民与其相同，隔离的现象仍然明显。
+By lowering the threshold to 30%, it can be found that segregation still emerged. We can calculate the "mean similarity" of the model using the proportion of the same type of household in the surrounding 8 households and averaging for all the households in the grid. "The "mean similarity" with 30% threshold converges to nearly 70%, which means that on average, 70% of the households around each household are the same, and segregation is still evident.
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-30.gif){: width="300"} | 
 |:--:|
 | *30%* |
 
 ### 20%
-直至排外程度下降至20%，才没有出现明显的隔离现象，此时的“平均相似度”接近50%，与网格中两类居民的比例相同。
+There is no significant segregation until the threshold drops to 20%, at which point the "mean similarity" is close to 50%, the same proportion as the two types of households in the grid.
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-20.gif){: width="300"} | 
 |:--:|
 | *20%* |
 
 ### 80%
-有趣的是，如果继续提高“排外程度”至80%，“平均相似度”却进一步下降至50%。当所有人都是极端排外主义者时，怎么会形成一个族群融合程度相当高的社会呢？仔细观察后可以发现，虽然“平均相似度”一直保持较低的水平，但“开心”居民的比例很低，所有居民都在频繁的“搬家”，导致聚居区无法形成。
+Interestingly, if we increase the threshold to 80%, the "mean similarity" also drops to 50%. In this case, the percentage of "happy" households is very low, and all households are constantly "moving".
 
 | ![alt]({{ site.url }}{{ site.baseurl }}/images/portfolio-3-80.gif){: width="300"} | 
 |:--:|
 | *80%* |
 
 ## Conclusion
-在各种“涌现”现象中，“相变”(phase transition)——系统定性表现的变化是其中最为神奇和重要的一个[7]。谢林的隔离模型中也存在“相变”，当“排外程度”逐渐上升，“平均相似度”先上升，后下降，同时模型的收敛速度逐渐下降，从可以收敛至静态到出现动态均衡。经过实验，本例中的“排外程度”为65%时模型仍可以收敛，而到70%时就不能收敛，由此可见本例模型的临界状态应当处于“排外程度”65%至70%之间
+Among the various "emergence" phenomena, the "phase transition" - the qualitative change of the system - is one of the most amazing and important ones. In Schelling's segregation model, there is also a "phase transition" when the threshold gradually increases and the "mean similarity" first increases and then decreases. The convergence rate of the model also gradually decreases with the model starting from static convergence to dynamic equilibrium. As the model can still converge when the threshold is 65%, but cannot converge when it reaches 70%, the critical state of the model is between 65% and 70%.
 
-基于主体的模型(Agent Based Model, ABM)常用于研究复杂系统中的这类“涌现”现象。谢林的隔离模型就是一个用于分析城市人口分布这一复杂系统的经典ABM，提出于1971年的它标志着主体建模仿真(Agent Based Modeling and Simulation, ABMS)方法从理论走向应用。
+Agent Based Model (ABM) is often used to study such "emergence" phenomena in complex systems. Schelling's segregation model is a classical ABM used to analyze the complex system of urban population distribution, which was proposed in 1971 and marked the move from theoretical to application of the Agent Based Modeling and Simulation (ABMS) method.
