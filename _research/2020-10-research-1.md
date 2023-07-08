@@ -9,10 +9,12 @@ end:
 location: "Beijing, China"
 ---
 
- This research aims to develop the Global Intelligence Innovation Index (GIII), a composite index for measuring the intelligence innovation levels of different countries. I designed a machine-learning-based method using K-means and Random Forest algorithm for index construction. Based on the national intelligence innovation framework, the index system of GIII is proposed then used to analyzed the intelligence innovation of 101 countries, providing a global landscape for policy-makers. The manuscript has been submitted to *Technological Forecasting and Social Change* and is currently under review.
+ This research aims to develop the Global Intelligence Innovation Index (GIII), a composite index for measuring the intelligence innovation levels of different countries. I designed a machine-learning-based method using K-means and Random Forest algorithm for index construction. Based on the national intelligence innovation framework, the index system of GIII is proposed then used to analyzed the intelligence innovation of 101 countries, providing a global landscape for policy-makers.
 
 ---
- You can download the manuscript of the article [here]({{ site.url }}{{ site.baseurl }}/files/Evaluating_Global_Intelligence_Innovation-manuscript.pdf).
+Publications:
+
+Ma, Xiaoyu; Hao, Yizhi; Li, Xiao; Liu, Jun; Qi, Jiasen (2023): Evaluating global intelligence innovation: An index based on machine learning methods. In *Technological Forecasting and Social Change* 194, p. 122736. DOI: [10.1016/j.techfore.2023.122736](https://doi.org/10.1016/j.techfore.2023.122736).
 
 ---
 ## Machine-Learning-Based Method for Constructing GIII  
