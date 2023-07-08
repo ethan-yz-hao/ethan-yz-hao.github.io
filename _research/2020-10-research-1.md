@@ -1,12 +1,13 @@
 ---
 title: "Beijing Foreign Studies University Global Index 2021 – Global Intelligence Innovation Index"
-collection: research
+collection: "research"
 type: "Research Assistant"
-permalink: /research/2020-10-research-1
+permalink: "/research/2020-10-research-1"
 venue: "Beijing Foreign Studies University"
-start: 2020-10
-end: 
+start: "2020-10"
+end: "2023-07"
 location: "Beijing, China"
+excerpt: "This research aims to develop the Global Intelligence Innovation Index (GIII), a composite index for measuring the intelligence innovation levels of different countries. I designed a machine-learning-based method using K-means and Random Forest algorithm for index construction. Based on the national intelligence innovation framework, the index system of GIII is proposed then used to analyzed the intelligence innovation of 101 countries, providing a global landscape for policy-makers.<br><img src='/images/GIII_method.png' width='600'>"
 ---
 
  This research aims to develop the Global Intelligence Innovation Index (GIII), a composite index for measuring the intelligence innovation levels of different countries. I designed a machine-learning-based method using K-means and Random Forest algorithm for index construction. Based on the national intelligence innovation framework, the index system of GIII is proposed then used to analyzed the intelligence innovation of 101 countries, providing a global landscape for policy-makers.
