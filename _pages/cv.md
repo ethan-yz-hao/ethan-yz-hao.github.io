@@ -7,6 +7,6 @@ redirect_from:
   - /resume
 ---
 
-You can download my CV [here]({{ site.url }}{{ site.baseurl }}/files/CV_V2.pdf).
+You can download my CV [here]({{ site.url }}{{ site.baseurl }}/files/CV_V3.pdf).
 
-<embed src="{{ site.url }}{{ site.baseurl }}/files/CV_V2.pdf" type="application/pdf"/>
+<embed src="{{ site.url }}{{ site.baseurl }}/files/CV_V3.pdf" type="application/pdf"/>
