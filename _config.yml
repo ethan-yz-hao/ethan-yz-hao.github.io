@@ -11,9 +11,9 @@ title                    : "Yizhi's Life@Work"
 title_separator          : "-"
 name                     : &name "Yizhi Hao"
 description              : &description "personal description"
-url                      : https://haowardyz.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://ethan-yz-hao.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "haowardyz/haowardyz.github.io"
+repository               : "ethan-yz-hao/ethan-yz-hao.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : 
   googlescholar    : 
-  email            : "haowardyz@gmail.com"
+  email            : "hao.yz.ethan@gmail.com"
   researchgate     : 
   uri              : 
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "haowardyz"
+  github           : "ethan-yz-hao"
   google_plus      :
   keybase          :
   instagram        :
