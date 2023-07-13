@@ -21,6 +21,6 @@ I have several working papers which employ structural equation modeling and agen
 
 Beyond supply chains, I also have experience in innovation management, machine learning, and comprehensive evaluation. My academic work in innovation management has been published in [Technological Forecasting and Social Change (10.1016/j.techfore.2023.122736)](https://doi.org/10.1016/j.techfore.2023.122736). It uses machine learning methods to construct a novel index system and evaluate national innovation performance.
 
-Yizhi Hao
+Ethan Y. Hao
 
 July 8, 2023

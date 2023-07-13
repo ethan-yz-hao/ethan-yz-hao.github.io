@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Yizhi's Life@Work"
+title                    : "Ethan Y. Hao's Life@Work"
 title_separator          : "-"
 name                     : &name "Yizhi Hao"
 description              : &description "personal description"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Yizhi Hao"
+  name             : "Ethan Y. Hao"
   avatar           : "bio-photo-3.jpg"
   bio              : "Master's student<br>Information Systems<br>Cornell University<br>Cornell Tech"
   location         : "Beijing, China"
