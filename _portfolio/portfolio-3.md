@@ -1,6 +1,6 @@
 ---
 title: "Agent-Based Modeling Demo - Schelling's Segregation Model"
-excerpt: "The classic Schelling's segregation model (Spring 2022) aiming to introduce the agent-based modeling method.<br/><img src='/images/portfolio-3-grid.jpg' width='200'>"
+excerpt: "The classic Schelling's segregation model (Spring 2022) aiming to introduce the agent-based modeling method.<br/><img src='/images/portfolio-3-50.gif' width='400'>"
 collection: portfolio
 ---
 

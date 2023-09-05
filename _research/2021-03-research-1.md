@@ -1,5 +1,5 @@
 ---
-title: "How Industrial Internet Enables Supply Chain Resilience"
+title: "The Impact of Industrial Internet on Supply Chain Resilience: a Resource-Based View"
 collection: "research"
 type: "Research Assistant"
 permalink: "/research/2021-03-research-1"
